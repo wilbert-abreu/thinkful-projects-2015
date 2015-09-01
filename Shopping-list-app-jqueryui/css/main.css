@@ -1,0 +1,25 @@
+body{padding-top:50px;}
+
+.web-app{padding:40px 15px;text-align:left;position:relative; left: 29%;}
+
+#text-box{height: 50px;width:297px; font-size:20px;border: 2px solid blue; border-radius: 15px;}
+
+#list{width:390px; height:500px; border: 2px solid blue !important; position:relative; left: 30%;}
+
+.list .row-content{ padding:15px 5px 10px 30px;}
+
+.checkbox{float:left; width: 10px; height: 10px; }
+.item{ }
+
+input[type=checkbox]{
+	margin:5px 10px !important;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+.deleteSingle{visibility:hidden;}
+
+
+
+

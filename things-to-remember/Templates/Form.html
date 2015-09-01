@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Untitled Document</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+	
+</head>
+<body>
+	<form id="signupForm">
+		<label for="name">Name:</label> <input type="text" id="name" name="name" required/><br><br>
+		Email: <input type="email" name="email"/><br><br>
+		Subject: <input type="text"/><br><br>
+		Message: <textarea rows="5" columns="5" name="message"></textarea><br><br>
+		<button type="submit">Send</button>
+	</form>
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+<script>
+	$(document).ready(function(){
+	
+	
+	$("#signupForm").validate({
+			rules: {
+				name: "required"
+				,
+				email: {
+					required: true,
+					email: true
+				},
+				message: {
+					required: true,
+					minlength:2, 
+					maxlength:200
+				}
+			},
+			messages: {
+				name: "Please enter your name",
+				email: {
+					required: "Please enter your email address",
+					email: "Please enter a valid email address"
+				},
+				message: {
+					minlength: "Your username must consist of at least 2 characters",
+					maxlength: "Your username must consist of at least 200 characters"
+			}
+//				,
+//				lastname: "Please enter your lastname",
+//				username: {
+//					required: "Please enter a username",
+//					minlength: "Your username must consist of at least 2 characters"
+//				},
+//				password: {
+//					required: "Please provide a password",
+//					minlength: "Your password must be at least 5 characters long"
+//				},
+//				confirm_password: {
+//					required: "Please provide a password",
+//					minlength: "Your password must be at least 5 characters long",
+//					equalTo: "Please enter the same password as above"
+//				},
+//				email: "Please enter a valid email address",
+//				agree: "Please accept our policy"
+			}
+		});
+	});
+	</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    </head>
+    <body ng-app='learningAngular' ng-controller='practiceCtrl'>
+    	{{4 +5}}<br>
+		{{ name }}<br>
+		<div ng-bind='name'></div>
+		<input type='text' ng-model='name'><br>
+				<button ng-click='alertMe()'>Alert Me Angular</button>
+		<button ng-click='toggleDiv()'>Toggle Div</button>
+		<div ng-show='willShow'> Angular is showing this!</div>
+		<div ng-hide='willShow'> Using ng-hide! </div>
+		<ul ng-repeat='puppy in puppies'>
+  <li> {{ puppy }} </li>
+<ul>
+<ul ng-repeat='(student, grade) in classGrades'>
+  <li> {{ student }}, {{ grade }} </li>
+<ul>
+    <script src="up.js"></script>  
+    </body>
+</html>

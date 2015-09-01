@@ -1,0 +1,54 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fmodern\fcharset0 Courier;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sl330
+
+\f0\fs30 \cf0 \expnd0\expndtw0\kerning0
+bower install jquery
+\f1\fs24 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
+\cf0 \
+$(document).ready(function()\{\
+\
+  $('div').hover(\
+    function()\{\
+    $(this).addClass('active');\
+    \},\
+    function()\{\
+        $(this).removeClass('active');\
+    \}\
+  );\
+\
+\});\
+\
+\pard\pardeftab720
+
+\fs26 \cf0 \expnd0\expndtw0\kerning0
+http://stackoverflow.com/questions/2155622/get-a-list-of-checked-checkboxes-in-a-div-using-jquery
+\fs24 \kerning1\expnd0\expndtw0 \
+
+\fs26 \expnd0\expndtw0\kerning0
+var selected = [];\
+$('#checkboxes input:checked').each(function() \{\
+    selected.push($(this).attr(%27name%27));\
+\});\
+\
+push = add item to array \
+pop = \'93pop\'94s out item from array or pop() = removes last item\
+unshift = add to beginning of array \
+shift() = remove first item\
+\
+<script src="js/app.js"></script>\
+starts every js file\
+$(function()\{\});\
+\
+$("#addButton").click(function () \{\}); // click on button do something\
+{\field{\*\fldinst{HYPERLINK "http://stackoverflow.com/questions/12407280/add-items-to-list-via-button-click-in-jquery"}}{\fldrslt \expnd0\expndtw0\kerning0
+http://stackoverflow.com/questions/12407280/add-items-to-list-via-button-click-in-jquery}}\
+{\field{\*\fldinst{HYPERLINK "http://jsfiddle.net/RMTxE/"}}{\fldrslt \expnd0\expndtw0\kerning0
+http://jsfiddle.net/RMTxE/}}\
+\
+$("#deleteButton").on("click", function () \{\}); /dynamic objects\
+}
