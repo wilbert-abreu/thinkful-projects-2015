@@ -9,4 +9,4 @@ Projects include:
 3) Street fighter animation (JavaScript)<br>
 4) Youtube search api app (HTML5, CSS3, Javascript, Ajax, & YouTube API)<br>
 5) Angular.js intro (HTML5, CSS3, & AngularJS)<br>
-6) ["Latest Movie Releases" Web App](wilbert-abreu.github.io/movie-page/) - Capstone (HTML5, CSS3, Bootstrap, jQuery, Ajax, & a [movie database api](http://docs.themoviedb.apiary.io/))
+6) ["Latest Movie Releases" Web App](http://wilbert-abreu.github.io/movie-page/) - Capstone (HTML5, CSS3, Bootstrap, jQuery, Ajax, & a [movie database api](http://docs.themoviedb.apiary.io/))
